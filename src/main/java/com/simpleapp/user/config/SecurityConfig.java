@@ -9,6 +9,12 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SecurityConfig {
+
+    private static final String[] PATH_WHITELIST = {
+            "/auth/register",
+            "/auth/login",
+    };
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -19,9 +25,8 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/**").permitAll() // Public: register, login
-                        .anyRequest().authenticated() // Everything else: secured
-                )
+                        .requestMatchers(PATH_WHITELIST).permitAll()
+                        .anyRequest().authenticated())
                 .httpBasic(httpBasic -> {
                 })
                 .formLogin(form -> form.disable());
