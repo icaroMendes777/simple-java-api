@@ -12,4 +12,4 @@ create src/main/resources/application.properties with configs
 
 ## To be implemented
 
-    - API mapping
+- API mapping
