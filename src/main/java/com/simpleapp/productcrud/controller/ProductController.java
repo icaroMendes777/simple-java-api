@@ -63,7 +63,7 @@ public class ProductController {
                 products.add(product);
             }
 
-            productService.saveAll(products); // you’ll need this method in your service
+            productService.saveAll(products);
             return ResponseEntity.ok("Uploaded " + products.size() + " products");
 
         } catch (Exception e) {
