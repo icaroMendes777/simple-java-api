@@ -29,6 +29,10 @@ public class ProductService {
         return productRepository.save(product);
     }
 
+    public void saveAll(List<Product> products) {
+        productRepository.saveAll(products);
+    }
+
     public Product update(Long id, Product newProduct) {
         return productRepository.findById(id)
                 .map(product -> {
