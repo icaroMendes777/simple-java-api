@@ -1,10 +1,10 @@
-package com.simpleapp.productcrud.controller;
+package com.simpleapp.product.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.simpleapp.productcrud.model.Product;
-import com.simpleapp.productcrud.service.ProductService;
+import com.simpleapp.product.model.Product;
+import com.simpleapp.product.service.ProductService;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

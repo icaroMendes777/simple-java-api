@@ -1,4 +1,4 @@
-package com.simpleapp.productcrud.model;
+package com.simpleapp.product.model;
 
 import jakarta.persistence.*;
 

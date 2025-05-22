@@ -1,9 +1,9 @@
-package com.simpleapp.productcrud.service;
+package com.simpleapp.product.service;
 
 import org.springframework.stereotype.Service;
 
-import com.simpleapp.productcrud.model.Product;
-import com.simpleapp.productcrud.repository.ProductRepository;
+import com.simpleapp.product.model.Product;
+import com.simpleapp.product.repository.ProductRepository;
 
 import java.util.List;
 import java.util.Optional;

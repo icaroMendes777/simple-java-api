@@ -1,8 +1,8 @@
-package com.simpleapp.productcrud.repository;
+package com.simpleapp.product.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.simpleapp.productcrud.model.Product;
+import com.simpleapp.product.model.Product;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
 }
